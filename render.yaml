@@ -30,6 +30,7 @@ services:
   type: web
   env: node
   region: oregon
+  plan: free
   buildCommand: yarn && yarn rw build api
   startCommand: yarn rw deploy render api
   envVars:
@@ -43,4 +44,5 @@ services:
 databases:
   - name: redwoodjs-db
     region: oregon
+    plan: free
 
